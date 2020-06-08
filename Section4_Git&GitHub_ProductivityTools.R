@@ -70,3 +70,15 @@ git add README.txt
 git commit -m "First commit. Adding README.txt file just to get started"
 git remote add origin "https://github.com/rairizarry/murders.git"
 git push    # you may need to add these arguments the first time: --set-upstream origin master
+
+
+#In the Data-Sciences-Harvard directory type:
+git remote set-url origin https://github.com/PedroLlanos/Data-Sciences-Harvard.git
+git push -u origin master
+#and to remove file from repo in Git and filesystem:
+git rm Section4_ProductivityTools.R
+git commit -m "removed file"
+git push -u origin master
+#or remove only from Git repo
+git rm --cached file1.txt
+git commit -m "remove file1.txt"
